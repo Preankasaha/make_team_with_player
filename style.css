@@ -1,6 +1,7 @@
 body {
+    box-sizing: border-box;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
-
 }
 
 header {
@@ -10,10 +11,12 @@ header {
     background-color: black;
 }
 
-
-
 #header-info {
     font-size: 1.5rem;
+}
+
+#title {
+    padding-top: 11.5rem;
 }
 
 #cover-img {
@@ -26,5 +29,10 @@ main {
 }
 
 #footer-id {
-    height: 55vh;
+    height: 35vh;
+    margin-top: 3rem;
+}
+
+#copyright-id {
+    margin-top: 2rem;
 }
