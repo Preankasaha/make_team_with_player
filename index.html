@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>player_selection_app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="conatiner">
+        <div class="text-white">
+            <p id="title" class="text-center fs-1">MAKE YOUR TEAM WITH BEST</p>
+            <p id="header-info" class="text-center">Players are here!!! <br> Just Choose the best buddies <br>&
+                level up your team's performance.
+            </p>
+            <img id="cover-img" src="images/cover.png" alt="">
+
+        </div>
+
+    </header>
+    <main>
+        <section id="main-container" class="container text-center text-white">
+            <div class="row gx-5 pt-5">
+                <!-- card-1 -->
+                <div class="col-3">
+                    <div id="player1" class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Lionel Messi</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="col-3">
+                    <div class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Neymar Jr</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="col-3">
+                    <div class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Kylian Mbappé</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- selected v section -->
+                <div class="col-3">
+                    <div class="card py-2" style="width: 15rem; height: 20rem; background-color: black;">
+                        <h3 class="text-center">Selected <span id="seclection-no">0</span>
+                        </h3>
+                        <div>
+                            <div id="player-list-part">
+                                <ol id="playerslist">
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row gx-5 mt-3">
+                <!-- card-4 -->
+                <div class="col-3">
+                    <div id="player1" class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Vítor Machado</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="col-3">
+                    <div class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Sergio Ramos</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="col-3">
+                    <div class="card" style="width: 17rem; background-color: black;">
+                        <img src="images/image-6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Renato Sanches</h4>
+                            <p>36 Goals . 120 Assist</p>
+                            <button type="button" class="btn btn-primary w-50"
+                                onclick="addPlayerList(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- budget section -->
+                <div class="col-3">
+                    <div class="card py-2" style="width: 15rem; background-color: black;">
+                        <h3 class="text-center">Budget</h3>
+
+                        <!-- players expenses section -->
+                        <div class="d-flex justify-content-around fw-semibold">
+                            <p>Per Player</p>
+                            <input id="player-salary-field" class="w-50 bg-dark text-white border border-none"
+                                type="text">
+                        </div>
+                        <button id="players-expense-btn" type="button"
+                            class="btn btn-primary w-75 mx-auto my-3">Calculate</button>
+                        <h5>Player Expenses $<span id="players-expense">5000</span></h5>
+
+                        <!-- total expense section -->
+                        <div class="d-flex justify-content-around fw-semibold my-3">
+                            <p class>Manager</p>
+                            <input id="manager-salary-field" class="w-50 bg-dark text-white border border-none"
+                                type="text">
+                        </div>
+                        <div class="d-flex justify-content-around fw-semibold">
+                            <p>Coach</p>
+                            <input id="coach-salary-field" class="w-50 bg-dark text-white ms-5 border border-none"
+                                type="text">
+                        </div>
+                        <button id="total-expense-button" type="button"
+                            class="btn btn-primary w-75 mx-auto my-3">Calculate
+                            Total</button>
+                        <h5>Total $<span id="total-expense">00</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <footer id="footer-id" class="container-fluid text-center text-white">
+            <br><br>
+            <hr>
+            <p class="pt-5">Copyright @ 2022 All Rights Reserved</p>
+        </footer>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

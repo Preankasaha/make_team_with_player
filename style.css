@@ -1,0 +1,36 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header {
+    height: 100vh;
+    /* background-image: url(images/image\ 27.png);
+    background-repeat: no-repeat; */
+    background-color: black;
+}
+
+#title {
+    padding-top: 11.5rem;
+    color: red;
+    animation-name: title-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#header-info {
+    font-size: 1.5rem;
+}
+
+#cover-img {
+    position: absolute;
+    top: 11.55rem;
+}
+
+main {
+    background-color: rgb(24, 24, 24);
+}
+
+#footer-id {
+    height: 55vh;
+}
