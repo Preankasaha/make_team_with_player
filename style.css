@@ -10,13 +10,7 @@ header {
     background-color: black;
 }
 
-#title {
-    padding-top: 11.5rem;
-    color: red;
-    animation-name: title-animation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
+
 
 #header-info {
     font-size: 1.5rem;
