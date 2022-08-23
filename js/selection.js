@@ -24,9 +24,11 @@ function addPlayerList(element) {
             return;
 
         }
+        // button disable code
+
         element.setAttribute('disabled', true);
     }
 
-    document.getElementById('seclection-no').innerText = playersArray.length;
+    document.getElementById('seclection-num').innerText = playersArray.length;
 
 }
