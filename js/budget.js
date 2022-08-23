@@ -14,3 +14,11 @@ document.getElementById('players-expense-btn').addEventListener('click', functio
     setTextValueById('players-expense', expense);
 })
 
+// calculate total expense
+
+document.getElementById('total-expense-button').addEventListener('click', function () {
+    const salaryOfManager = getInputValueById('manager-salary-field');
+    const salaryOfCoach = getInputValueById('coach-salary-field');
+    const totalExpense = expenseForPlayers() + (salaryOfManager + salaryOfCoach);
+    setTextValueById('total-expense', totalExpense);
+})
