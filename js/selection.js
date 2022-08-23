@@ -1,3 +1,4 @@
+// player selection and adding to list
 const playersArray = [];
 
 function addPlayerList(element) {
