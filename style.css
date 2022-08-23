@@ -4,6 +4,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* header section */
+
 header {
     height: 100vh;
     /* background-image: url(images/image\ 27.png);
@@ -11,19 +13,14 @@ header {
     background-color: black;
 }
 
-#header-info {
-    font-size: 1.5rem;
-}
-
 #title {
+    font-size: 3rem;
     padding-top: 11.5rem;
     color: red;
     animation-name: title-animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
-
 
 @keyframes title-animation {
     0% {
@@ -48,14 +45,22 @@ header {
 }
 
 
+#header-info {
+    font-size: 1.5rem;
+}
+
 #cover-img {
     position: absolute;
     top: 11.55rem;
 }
 
+/* main container */
+
 main {
     background-color: rgb(24, 24, 24);
 }
+
+/* footer */
 
 #footer-id {
     height: 35vh;
