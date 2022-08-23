@@ -6,3 +6,11 @@ function expenseForPlayers() {
     const expenditureForPlayers = expenditurePerPlayer * playerList.childNodes.length;
     return expenditureForPlayers;
 }
+
+// added eventlistener to calculation button 
+
+document.getElementById('players-expense-btn').addEventListener('click', function () {
+    const expense = expenseForPlayers();
+    setTextValueById('players-expense', expense);
+})
+

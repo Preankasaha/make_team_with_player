@@ -4,3 +4,10 @@ function getInputValueById(inputFieldId) {
     const inputFieldValue = parseFloat(inputFieldString);
     return inputFieldValue;
 }
+
+
+function setTextValueById(elementId, value) {
+    const expenditureTextField = document.getElementById(elementId, value);
+    expenditureTextField.innerText = value;
+
+}
