@@ -4,6 +4,7 @@ function expenseForPlayers() {
     const expenditurePerPlayer = getInputValueById('player-salary-field');
     const playerList = document.getElementById('playerslist');
     const expenditureForPlayers = expenditurePerPlayer * playerList.childNodes.length;
+    console.log(expenditureForPlayers);
     return expenditureForPlayers;
 }
 
